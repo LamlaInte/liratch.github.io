@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="index.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    <link rel="manifest" href="/manifest.json">
+</head>
+<body>
+
+    <div class="mdl-layout mdl-js-layout">
+        <header class="mdl-layout__header mdl-layout__header--scroll">
+          <div class="mdl-layout__header-row">
+            <!-- Title -->
+            <span class="mdl-layout-title"><img src="lamla_inte.svg" class="lamla"></span>
+            <!-- Add spacer, to align navigation to the right -->
+            <div class="mdl-layout-spacer"></div>
+            <!-- Navigation -->
+            <nav class="mdl-navigation">
+                <a class="mdl-navigation__link" href="">Check</a>
+                <a class="mdl-navigation__link" href="add.html">Add</a>
+                <a class="mdl-navigation__link" href="">Other projects</a>
+                <a class="mdl-navigation__link" href="">Contacts</a>
+            </nav>
+          </div>
+        </header>
+        <div class="mdl-layout__drawer">
+          <span class="mdl-layout-title"><img src="lamla_inte.svg" class="lamla"></span>
+          <nav class="mdl-navigation">
+            <a class="mdl-navigation__link" href="">Check</a>
+            <a class="mdl-navigation__link" href="add.html">Add</a>
+            <a class="mdl-navigation__link" href="">Other projects</a>
+            <a class="mdl-navigation__link" href="">Contacts</a>
+          </nav>
+        </div>
+        <main class="mdl-layout__content">
+          <div class="page-content">
+
+        
+        
+        
+        
+            <div class="input_day">
+              <form onsubmit="return false;">
+                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label dayAdd input_add_homework_1">
+                  <input class="mdl-textfield__input" type="text" id="dayCheck" list="options">
+                  <label class="mdl-textfield__label" for="dayCheck">Day</label>
+                  <datalist id="options">
+                    <option value="Monday">
+                    <option value="Tuesday">
+                    <option value="Wednesday">
+                    <option value="Thursday">
+                    <option value="Friday">
+                  </datalist>
+                  
+                </div>
+                
+                <h1 id="dayCheckAnser" class="da"></h1>
+              </form>
+              <button onclick="check()" class="button">Done?</button>
+            </div>
+            
+            
+
+            <h1 id="dayCheckAnser"></h1>
+
+            <div class="lamla_text">Don't forget: <b>NO LAMLING HERE!!!</b></div>
+        
+        
+
+          </div>
+        </main>
+      </div>
+
+      <script src="index.js"></script>
+</body>
+</html>
